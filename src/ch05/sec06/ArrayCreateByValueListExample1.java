@@ -7,9 +7,9 @@ public class ArrayCreateByValueListExample1 {
 
         //배열의 항목값 읽기
         System.out.println("season[0] : " + season[0]);
-        System.out.println("season[0] : " + season[1]);
-        System.out.println("season[0] : " + season[2]);
-        System.out.println("season[0] : " + season[3]);
+        System.out.println("season[1] : " + season[1]);
+        System.out.println("season[2] : " + season[2]);
+        System.out.println("season[3] : " + season[3]);
 
         //인덱스 1번 항목의 값 변경
         season[1] = "여름";
@@ -21,6 +21,7 @@ public class ArrayCreateByValueListExample1 {
 
         //총합과 평균 구하기
         int sum = 0;
+        // 배열의 길이는 변할 수 있으므로 3 대신 scores.length()가 더 좋은 코드
         for(int i=0; i<3; i++) {
             sum += scores[i];
         }
